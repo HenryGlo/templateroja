@@ -1,5 +1,6 @@
 //Variable Definition
 $primary-color: #C10202;
+$hover-color:rgb(146, 3, 3);
 $secondary-color: #8C8C8C;
 $background-color:#EDEDED;
 //Template Colors Definition
@@ -17,22 +18,29 @@ body {
 
 //Header Lg - Md devices Styles
 .header-medium {
-    padding: 30px 2%;
+    padding: 10px 5%;
     .shotengai-title {
         font-weight: 800;
     }
+    .navbar-nav {
+        width: 100%;
+    }
     .header-items-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .header-item {
             margin: 0 2%;
             font-size: 1.4rem;
             cursor: pointer;
-            transition: all 0.3s ease-in;
-            &:hover {
-                color: $primary-color;
-            }
         }
         p {
             margin-bottom: 0;
+            transition: all 0.3s ease-in;
+            color: black !important;
+            &:hover {
+                color: $primary-color !important;
+            }
         }
     }
     .header-icons {
@@ -120,7 +128,7 @@ body {
         &::after {
             content: "";
             background: $primary-color;
-            height: 50%;
+            height: 100%;
             width: 10%;
             position: absolute;
             bottom:-200px;
@@ -133,7 +141,7 @@ body {
         &::before {
             content: "";
             background: $primary-color;
-            height: 50%;
+            height: 100%;
             width: 10%;
             position: absolute;
             top: -200px;
@@ -142,6 +150,141 @@ body {
             margin-left: auto; 
             margin-right: auto;
             z-index: -1;
+        }
+    }
+}
+//Section 2 Styles
+.product-new-section {
+    padding: 50px 5%;
+    position: relative;
+    .section-title {
+        hr {
+            color: $primary-color;
+            border-top: 3px solid $primary-color;
+            width: 50%;
+        }
+    }
+    .product-container {
+        .product-image {
+            width: 80%;
+            img {
+                width: 100%;
+            }
+        }
+        .product-name {
+            .category {
+                color: rgba(0, 0, 0, 0.575);
+            }
+            .title {
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+        }
+        .product-price {
+            color: $primary-color;
+            font-weight: 800;
+        }
+        .product-options {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            svg {
+                width: 10%;
+                margin-right: 10px;
+            }
+            .product-button {
+                background: $primary-color;
+                width: 70%;
+                padding: 10px 5%;
+                color: white;
+                border-radius: 15px;
+                border: none;
+                transition: all 0.2s ease-in;
+                &:focus 
+                {
+                    border:none; /* here configure as your needs */
+                }
+                &:hover {
+                    background: $hover-color;
+                }
+            }
+        }
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-top: 8px;
+        .swiper-pagination {
+            position: relative;
+            margin-top: 20px;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            padding: 50px 2%;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .show-products {
+        button {
+            background: $primary-color;
+            border: none;
+            color: white;
+            padding: 10px 5%;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+/* Portrait */
+@media only screen
+ 
+and (min-device-width: 375px)
+ 
+and (max-device-width: 667px)
+ 
+and (-webkit-min-device-pixel-ratio: 2)
+ 
+and (orientation: portrait) {
+    .header-medium {
+        padding: 10px 5%;
+        .shotengai-title {
+            font-weight: 800;
+            font-size: 1.7rem;
+        }
+        .header-items-container {
+            display: block;
+        }
+        .header-icons {
+            padding-top: 30px;
+            .header-icon {
+                &:nth-child(3)::before {
+                    top: 10px;
+                }
+            }
+        }
+    }
+    .home-section {
+        padding:50px 2% ;
+        .home-section-button {
+            width: 100%;
+        }
+
+    }
+
+    .product-new-section {
+        .show-products {
+            button {
+                width:80%;
+            }
         }
     }
 }
