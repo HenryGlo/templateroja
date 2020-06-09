@@ -15,15 +15,25 @@ $background-color:#EDEDED;
 body {
     font-family: 'Josefin Sans', sans-serif !important;
 }
+img {
+    width: 100%;
+}
 
 //Header Lg - Md devices Styles
 .header-medium {
+    background: white;
     padding: 10px 5%;
+    .container {
+        max-width: 1170px;
+    }
+    .navbar {
+        padding: 0;
+        .navbar-nav {
+            width: 100%;
+        }
+    }
     .shotengai-title {
         font-weight: 800;
-    }
-    .navbar-nav {
-        width: 100%;
     }
     .header-items-container {
         display: flex;
@@ -48,21 +58,18 @@ body {
             display: flex;
             justify-content: center;
             cursor: pointer;
+            margin: 0 10%;
             svg {
-                width: 30%;
+                width: 30px;
                 transition: all 0.3s ease-in;
                 &:hover {
                     fill: $primary-color;
                 }
             }
-            &:nth-child(3)::before {
-                content: attr(data-before);
-                position: absolute;
+            .badge-counter {
                 background-color: $primary-color;
                 padding: 3px 5px;
-                border-radius: 50%;
-                top: -18px;
-                right: 30px;
+                border-radius: 5px;
                 z-index: 20;
                 color: white;
                 display: flex;
@@ -76,6 +83,13 @@ body {
 //Section general styles
 .section-padding {
     padding: 100px 2%;
+}
+.section-title {
+    hr {
+        color: $primary-color;
+        border-top: 3px solid $primary-color;
+        width: 50%;
+    }
 }
 
 //Section 1 Styles
@@ -157,13 +171,6 @@ body {
 .product-new-section {
     padding: 50px 5%;
     position: relative;
-    .section-title {
-        hr {
-            color: $primary-color;
-            border-top: 3px solid $primary-color;
-            width: 50%;
-        }
-    }
     .product-container {
         .product-image {
             width: 80%;
@@ -243,7 +250,44 @@ body {
     }
 }
 
-
+//Section 3 Styles
+.products-section {
+    .product-show-container {
+        button {
+            background: $primary-color;
+            padding: 10px 5%;
+            color: white;
+            border: none;
+            font-size: 1.3rem;
+            &:hover {
+                background: $hover-color;
+            }
+        }
+        .product-buttons-container {
+            margin-top: 50px;
+            button:nth-child(2) {
+                margin: 0 2%;
+            }
+            .active {
+                background: $hover-color;
+            }
+        }
+        .product-container {
+            margin-top: 50px;
+            .product {
+                .product-info {
+                    p {
+                        color: $secondary-color;
+                        font-size: 1.5rem;
+                    }
+                }
+                .product-image {
+                    width: 30%;
+                }
+            }
+        }
+    }
+}
 /* Portrait */
 @media only screen
  
@@ -255,7 +299,7 @@ and (-webkit-min-device-pixel-ratio: 2)
  
 and (orientation: portrait) {
     .header-medium {
-        padding: 10px 5%;
+        padding: 10px 0;
         .shotengai-title {
             font-weight: 800;
             font-size: 1.7rem;
@@ -273,7 +317,7 @@ and (orientation: portrait) {
         }
     }
     .home-section {
-        padding:50px 2% ;
+        padding:150px 2% ;
         .home-section-button {
             width: 100%;
         }
@@ -286,5 +330,27 @@ and (orientation: portrait) {
                 width:80%;
             }
         }
+    }
+    .product-show-container {
+        button {
+           width: 100%;
+        }
+        .product-container {
+            .product {
+                display: block !important;
+                .product-info {
+                   width: 100%;
+                }
+                .product-image {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width: 1100px) {
+    .header-icons {
+        width: 100%;
     }
 }

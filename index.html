@@ -11,57 +11,62 @@
 </head>
 <body>
     <!--Start Header -->
-    <header class="header-medium shadow rounded container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light ow justify-content-center align-items-center">
-            <div class="col-6 col-md-2 d-flex align-items-center">
-                <a class="navbar-brand" href="/"><h1 class="shotengai-title m-0"><span class="primary-color">Sho</span>tengai</h1></a>
-            </div>
-            <div class="col-6 d-lg-none d-flex justify-content-end">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="col-md-6">
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="navbar-nav header-items-container">
-                        <div class="header-item nav-item">
-                            <p class="nav-link">Inicio</p>
+    <header class="header-medium shadow rounded fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light justify-content-center align-items-center">
+                        <div class="d-flex align-items-center">
+                            <a class="navbar-brand" href="/"><h1 class="shotengai-title m-0"><span class="primary-color">Sho</span>tengai</h1></a>
                         </div>
-                        <div class="header-item nav-item">
-                            <p class="nav-link">Productos</p>
+                        <div class="col-6 d-lg-none d-flex justify-content-end">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                         </div>
-                        <div class="header-item nav-item">
-                            <p class="nav-link">Sobre nosotros</p>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <div class="navbar-nav header-items-container">
+                                <div class="header-item nav-item">
+                                    <p class="nav-link">Inicio</p>
+                                </div>
+                                <div class="header-item nav-item">
+                                    <p class="nav-link">Productos</p>
+                                </div>
+                                <div class="header-item nav-item">
+                                    <p class="nav-link">Sobre nosotros</p>
+                                </div>
+                                <div class="header-item nav-item">
+                                    <p class="nav-link">Lo ultimo</p>
+                                </div>
+                                <div class="header-item nav-item">
+                                    <p class="nav-link">Contacto</p>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="header-icons d-flex justify-content-center align-items-center">
+                            <div class="header-icon">
+                                <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.8169 28.0494L21.1021 19.3346C22.755 17.2939 23.75 14.6996 23.75 11.875C23.75 5.32718 18.4228 0 11.875 0C5.32712 0 0 5.32718 0 11.875C0 18.4229 5.32718 23.7501 11.875 23.7501C14.6996 23.7501 17.2939 22.755 19.3346 21.1022L28.0494 29.817C28.2935 30.061 28.6891 30.061 28.9333 29.817L29.817 28.9332C30.061 28.6891 30.061 28.2934 29.8169 28.0494ZM11.875 21.2501C6.70537 21.2501 2.50002 17.0447 2.50002 11.875C2.50002 6.70537 6.70537 2.50002 11.875 2.50002C17.0447 2.50002 21.2501 6.70537 21.2501 11.875C21.2501 17.0447 17.0447 21.2501 11.875 21.2501Z" />
+                                </svg>
+                            </div>
+                            <div class="header-icon">
+                                <svg enable-background="new 0 0 515.556 515.556" viewBox="0 0 515.556 515.556" xmlns="http://www.w3.org/2000/svg"><path d="m348.918 37.751c50.334 50.334 50.334 131.942 0 182.276s-131.942 50.334-182.276 0-50.334-131.942 0-182.276c50.334-50.335 131.942-50.335 182.276 0"/><path d="m455.486 350.669c-117.498-79.391-277.917-79.391-395.415 0-17.433 11.769-27.848 31.656-27.848 53.211v111.676h451.111v-111.676c0-21.555-10.416-41.442-27.848-53.211z"/></svg>
+                            </div>
+                            <div class="header-icon">
+                                <svg viewBox="0 0 30 30" enable-background="new 0 0 515.556 515.556" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.66568 19.3948H9.66705C9.6682 19.3948 9.66934 19.3945 9.67049 19.3945H25.6055C25.9978 19.3945 26.3427 19.1343 26.4505 18.7571L29.9661 6.45241C30.0419 6.18713 29.9888 5.90195 29.8228 5.68176C29.6567 5.46158 29.3969 5.33203 29.1211 5.33203H7.6387L7.01042 2.50465C6.92093 2.10251 6.56433 1.81641 6.15234 1.81641H0.878906C0.393448 1.81641 0 2.20985 0 2.69531C0 3.18077 0.393448 3.57422 0.878906 3.57422H5.44739C5.55862 4.07524 8.45398 17.1046 8.62061 17.8542C7.68654 18.2602 7.03125 19.1915 7.03125 20.2734C7.03125 21.7273 8.21411 22.9102 9.66797 22.9102H25.6055C26.0909 22.9102 26.4844 22.5167 26.4844 22.0312C26.4844 21.5458 26.0909 21.1523 25.6055 21.1523H9.66797C9.18343 21.1523 8.78906 20.758 8.78906 20.2734C8.78906 19.7896 9.18205 19.3959 9.66568 19.3948ZM27.9559 7.08984L24.9424 17.6367H10.3729L8.02917 7.08984H27.9559Z" />
+                                    <path d="M8.78906 25.5469C8.78906 27.0007 9.97192 28.1836 11.4258 28.1836C12.8796 28.1836 14.0625 27.0007 14.0625 25.5469C14.0625 24.093 12.8796 22.9102 11.4258 22.9102C9.97192 22.9102 8.78906 24.093 8.78906 25.5469ZM11.4258 24.668C11.9103 24.668 12.3047 25.0623 12.3047 25.5469C12.3047 26.0314 11.9103 26.4258 11.4258 26.4258C10.9412 26.4258 10.5469 26.0314 10.5469 25.5469C10.5469 25.0623 10.9412 24.668 11.4258 24.668Z" />
+                                    <path d="M21.2109 25.5469C21.2109 27.0007 22.3938 28.1836 23.8477 28.1836C25.3015 28.1836 26.4844 27.0007 26.4844 25.5469C26.4844 24.093 25.3015 22.9102 23.8477 22.9102C22.3938 22.9102 21.2109 24.093 21.2109 25.5469ZM23.8477 24.668C24.3322 24.668 24.7266 25.0623 24.7266 25.5469C24.7266 26.0314 24.3322 26.4258 23.8477 26.4258C23.3631 26.4258 22.9688 26.0314 22.9688 25.5469C22.9688 25.0623 23.3631 24.668 23.8477 24.668Z" />
+                                </svg>
+                                <div class="badge-counter">
+                                    0
+                                </div>
+                            </div>
                         </div>
-                        <div class="header-item nav-item">
-                            <p class="nav-link">Lo ultimo</p>
-                        </div>
-                        <div class="header-item nav-item">
-                            <p class="nav-link">Contacto</p>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-            <div class="col-md-2">
-                <div class="header-icons d-flex justify-content-center align-items-center">
-                    <div class="header-icon">
-                        <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M29.8169 28.0494L21.1021 19.3346C22.755 17.2939 23.75 14.6996 23.75 11.875C23.75 5.32718 18.4228 0 11.875 0C5.32712 0 0 5.32718 0 11.875C0 18.4229 5.32718 23.7501 11.875 23.7501C14.6996 23.7501 17.2939 22.755 19.3346 21.1022L28.0494 29.817C28.2935 30.061 28.6891 30.061 28.9333 29.817L29.817 28.9332C30.061 28.6891 30.061 28.2934 29.8169 28.0494ZM11.875 21.2501C6.70537 21.2501 2.50002 17.0447 2.50002 11.875C2.50002 6.70537 6.70537 2.50002 11.875 2.50002C17.0447 2.50002 21.2501 6.70537 21.2501 11.875C21.2501 17.0447 17.0447 21.2501 11.875 21.2501Z" />
-                        </svg>
-                    </div>
-                    <div class="header-icon">
-                        <svg enable-background="new 0 0 515.556 515.556" viewBox="0 0 515.556 515.556" xmlns="http://www.w3.org/2000/svg"><path d="m348.918 37.751c50.334 50.334 50.334 131.942 0 182.276s-131.942 50.334-182.276 0-50.334-131.942 0-182.276c50.334-50.335 131.942-50.335 182.276 0"/><path d="m455.486 350.669c-117.498-79.391-277.917-79.391-395.415 0-17.433 11.769-27.848 31.656-27.848 53.211v111.676h451.111v-111.676c0-21.555-10.416-41.442-27.848-53.211z"/></svg>
-                    </div>
-                    <div class="header-icon">
-                        <svg viewBox="0 0 30 30" enable-background="new 0 0 515.556 515.556" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.66568 19.3948H9.66705C9.6682 19.3948 9.66934 19.3945 9.67049 19.3945H25.6055C25.9978 19.3945 26.3427 19.1343 26.4505 18.7571L29.9661 6.45241C30.0419 6.18713 29.9888 5.90195 29.8228 5.68176C29.6567 5.46158 29.3969 5.33203 29.1211 5.33203H7.6387L7.01042 2.50465C6.92093 2.10251 6.56433 1.81641 6.15234 1.81641H0.878906C0.393448 1.81641 0 2.20985 0 2.69531C0 3.18077 0.393448 3.57422 0.878906 3.57422H5.44739C5.55862 4.07524 8.45398 17.1046 8.62061 17.8542C7.68654 18.2602 7.03125 19.1915 7.03125 20.2734C7.03125 21.7273 8.21411 22.9102 9.66797 22.9102H25.6055C26.0909 22.9102 26.4844 22.5167 26.4844 22.0312C26.4844 21.5458 26.0909 21.1523 25.6055 21.1523H9.66797C9.18343 21.1523 8.78906 20.758 8.78906 20.2734C8.78906 19.7896 9.18205 19.3959 9.66568 19.3948ZM27.9559 7.08984L24.9424 17.6367H10.3729L8.02917 7.08984H27.9559Z" />
-                            <path d="M8.78906 25.5469C8.78906 27.0007 9.97192 28.1836 11.4258 28.1836C12.8796 28.1836 14.0625 27.0007 14.0625 25.5469C14.0625 24.093 12.8796 22.9102 11.4258 22.9102C9.97192 22.9102 8.78906 24.093 8.78906 25.5469ZM11.4258 24.668C11.9103 24.668 12.3047 25.0623 12.3047 25.5469C12.3047 26.0314 11.9103 26.4258 11.4258 26.4258C10.9412 26.4258 10.5469 26.0314 10.5469 25.5469C10.5469 25.0623 10.9412 24.668 11.4258 24.668Z" />
-                            <path d="M21.2109 25.5469C21.2109 27.0007 22.3938 28.1836 23.8477 28.1836C25.3015 28.1836 26.4844 27.0007 26.4844 25.5469C26.4844 24.093 25.3015 22.9102 23.8477 22.9102C22.3938 22.9102 21.2109 24.093 21.2109 25.5469ZM23.8477 24.668C24.3322 24.668 24.7266 25.0623 24.7266 25.5469C24.7266 26.0314 24.3322 26.4258 23.8477 26.4258C23.3631 26.4258 22.9688 26.0314 22.9688 25.5469C22.9688 25.0623 23.3631 24.668 23.8477 24.668Z" />
-                        </svg>
-                    </div>
+                    </nav>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
     <!--End Header -->
     <!--Banner Section Start-->
@@ -243,6 +248,49 @@
         </div>
         <div class="show-products d-flex justify-content-center">
             <button>Ver mas</button>
+        </div>
+    </section>
+    <section class="products-section section-padding">
+        <div class="section-title">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <h1>Nuestros <span class="primary-color">Productos</span></h1>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-show-container container">
+            <div class="product-buttons-container row justify-content-center">
+                <button class="col-md-3 active">Cocina</button>
+                <button class="col-md-3">Dormitorios</button>
+                <button class="col-md-3">Sala</button>
+            </div>
+            <div class="row product-container justify-content-center">
+                <div class="product col-md-8 d-flex justify-content-between align-items-center">
+                    <div class="product-info">
+                        <h1>Lavadoras</h1>
+                        <p>Las mejores marcas de lavadoras disponibles para tu hogar</p>
+                        <button>Ver mas</button>
+                    </div>
+                    <div class="product-image ">
+                        <img src="./img/banner-lavadora.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row product-container justify-content-center">
+                <div class="product col-md-8 d-flex justify-content-between align-items-center">
+                    <div class="product-image">
+                        <img src="./img/01.009.00187-cocina-neveras-ge-PSMS9PGDCSS.png" alt="">
+                    </div>
+                    <div class="product-info">
+                        <h1>Neveras</h1>
+                        <p>Las mejores marcas de lavadoras disponibles para tu hogar</p>
+                        <button>Ver mas</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script src="js/libs/jquery/jquery.min.js"></script>
