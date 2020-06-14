@@ -413,6 +413,45 @@ and (orientation: portrait) {
             }
         }
     }
+    .product-buttons-container {
+        margin-top: 50px;
+        button:nth-child(2) {
+            margin: 30px 0 !important;
+        }
+        .active {
+            background: $hover-color;
+        }
+    }
+    .brand-section {
+        .title-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+        .brand-container {
+            margin: 30px 0;
+            .brand-content {
+                margin-top: 50px !important;
+            }
+        }
+    }
+    footer {
+        padding: 100px 2% !important;
+        border: none !important;
+        position: relative;
+        .footer-items-container {
+            text-align: center;
+            .item {
+                margin:50px 0;
+            }
+        }
+        .footer-info-container {
+            padding: 5px 2%;
+            position: relative;
+        }
+    }
     
 }
 @media only screen and (max-width: 1100px) {
