@@ -27,6 +27,6 @@ var swiper = new Swiper('.swiper-container', {
       },
   });
 
-$( document ).ready(function() {
+$( window ).ready(function() {
   $(".preloader").fadeOut("slow")
 });
